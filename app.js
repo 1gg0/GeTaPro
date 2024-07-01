@@ -1,6 +1,6 @@
-document.addEventListener('DOMContentLoaded', loadProjects);
+document.addEventListener('DOMContentLoaded', loadProjects); 
 
-function addProject() {
+function addProject() { // Função para "lançar" um novo Projeto
     const projectName = document.getElementById('projectName').value;
     const projectDescription = document.getElementById('projectDescription').value;
     const startDate = document.getElementById('startDate').value;
@@ -29,20 +29,20 @@ function addProject() {
     document.getElementById('endDate').value = '';
 }
 
-function saveProject(project) {
-    let projects = JSON.parse(localStorage.getItem('projects')) || [];
+function saveProject(project) { // Função que salva o Projeto lançado
+    let projects = JSON.parse(localStorage.getItem('projects')) || []; // localStorage está em todas as funções, pois ele permite o salvamento local dos Projetos já lançados
     projects.push(project);
     console.log("Saving projects:", projects);
     localStorage.setItem('projects', JSON.stringify(projects));
 }
 
-function loadProjects() {
+function loadProjects() { // Função que carrega o Projeto já lançado
     const projects = JSON.parse(localStorage.getItem('projects')) || [];
     console.log("Loading projects:", projects);
     projects.forEach(displayProject);
 }
 
-function displayProject(project) {
+function displayProject(project) { // Mostrador de projetos já lançados
     const projectList = document.getElementById('projectList');
     const projectItem = document.createElement('li');
     projectItem.classList.add('project-item');
