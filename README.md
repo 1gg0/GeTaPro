@@ -1,4 +1,4 @@
-<h3> # GeTaPro </h3>
+<h3> # GeTaPro </h3> <p></p>
 Aplicativo para Gestão Simples de Tarefas e Projetos. <p>
 Desenvolvido em JavaScript, HTML e CSS. <p>
 Permite ao usúario, anotar nome, descrição, data de início e término de projeto/tarefa. <p>
