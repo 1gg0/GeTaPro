@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aplicativo de Gestão de Projetos</title> /* Nome do app */
+    <title>Aplicativo de Gestão de Projetos</title> <!-- Nome do app -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <img src="LOGO" alt="Logo" class="logo" style="width: 50%;"> /* Em "LOGO" substituir por link da imagem */
-        <h3>Gestão de tarefas e projetos:</h3> /* Titulo do app */
-        <div class="project-form"> /* Inicio formulario do projeto */
+        <img src="LOGO.png" alt="Logo" class="logo" style="width: 50%;"> <!-- em "LOGO.png" substituir por link da img -->
+        <h3>Gestão de tarefas e projetos:</h3> <!-- Titulo do app -->
+        <div class="project-form"> <!-- Inicio formulario de lançamento de projetos e tarefas -->
             <input type="text" id="projectName" placeholder="Nome do Projeto">
             <textarea id="projectDescription" placeholder="Descrição do Projeto"></textarea>
             <input type="date" id="startDate" placeholder="Data de Início">
             <input type="date" id="endDate" placeholder="Data de Término">
             <button onclick="addProject()">Adicionar Projeto</button>
-        </div> /* Fim do formulario do projeto */
-        <ul id="projectList"></ul> /* Lista de Tarefas já lançadas */
+        </div> <!-- Fim do formulario de lançamento -->
+        <ul id="projectList"></ul> <!-- Lista de Tarefas já lançadas -->
     </div>
     <script src="app.js"></script>
 </body>
