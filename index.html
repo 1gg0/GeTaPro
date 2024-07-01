@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicativo de Gestão de Projetos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="LOGO" alt="Logo" class="logo" style="width: 50%;">
+        <h3>Gestão de tarefas e projetos:</h3>
+        <div class="project-form">
+            <input type="text" id="projectName" placeholder="Nome do Projeto">
+            <textarea id="projectDescription" placeholder="Descrição do Projeto"></textarea>
+            <input type="date" id="startDate" placeholder="Data de Início">
+            <input type="date" id="endDate" placeholder="Data de Término">
+            <button onclick="addProject()">Adicionar Projeto</button>
+        </div>
+        <ul id="projectList"></ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
